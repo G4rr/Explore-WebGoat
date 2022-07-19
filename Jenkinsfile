@@ -1,5 +1,7 @@
 pipeline {
-  agent any 
+  agent {
+      label 'scanner'
+  }
   stages {
     stage('Scan') {
       steps {
